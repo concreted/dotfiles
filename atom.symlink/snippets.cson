@@ -1,0 +1,48 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+'.html':
+  'HTML doc':
+    'prefix': 'html'
+    'body': '<html>\n\t<head>\n</head>\n<body>\n</body>\n</html>'
+  'CSS link tag':
+    'prefix': 'css'
+    'body': '<link rel="stylesheet" href="${1:source}" />$2'
+  'Script tag':
+    'prefix': 'script src'
+    'body': '<script src="${1:source}"></script>$2'
+'.js':
+  'Function':
+    'prefix': 'function'
+    'body': "function ${1:f}(${2:arguments}) {\n\t$3\n}"
+  'IIFE':
+    'prefix': 'iife'
+    'body': "(function ${1:f}(${2:arguments}) {\n\t$3\n})(${4:arg})"
+  'Mocha: describe':
+    'prefix': 'describe'
+    'body': "describe('${1}', function() {\n\t$2\n});"
+  'Mocha: it':
+    'prefix': 'it'
+    'body': "it('should $1', function() {\n\t$2\n});"
+  'require chai all':
+    'prefix': 'require chai all'
+    'body': "var chai = require('chai'),\n    expect = chai.expect,\n    assert = chai.assert,\n    should = chai.should();"
+  'require assert':
+    'prefix': 'require assert'
+    'body': "var assert = require('chai').assert;"

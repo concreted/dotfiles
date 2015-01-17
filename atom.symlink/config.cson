@@ -1,35 +1,21 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  "exception-reporting":
+    userId: "cd343df3-174a-6a50-7ece-4bb22fcd0cc8"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f626ffda2e55de3fdfcac5736736b3c51bda5608"
+  core:
+    disabledPackages: [
+      "vim-mode"
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
+  editor:
+    fontSize: 20
+  wakatime:
+    ignore: [
+      "^/var/"
+      "^/tmp/"
+      "^/private/"
     ]
-    'hideGitIgnoredFiles': true
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
-    ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
-    ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'go-plus': {}
+    apikey: "0c2ce033-196d-4798-bc97-9aae64a070ca"
+  "autoclose-html": {}

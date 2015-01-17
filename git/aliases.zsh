@@ -17,3 +17,11 @@ alias gco='git checkout'
 alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
+
+alias gprum='git pull --rebase upstream master'
+alias gh='git hist'
+alias gst='git status'
+alias ga='git add'
+alias gaa='git add -A'
+alias gau='git add -u'
+alias gcm='git commit'
