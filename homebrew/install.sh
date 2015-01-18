@@ -17,6 +17,11 @@ brew install grc coreutils spark
 brew install git
 brew install --HEAD hub
 
+# Install Node and NPM
+brew install node --without-npm
+echo prefix=~/.npm-packages >> ~/.npmrc
+curl -L https://www.npmjs.org/install.sh | sh
+
 # Install cask
 brew install caskroom/cask/brew-cask
 
