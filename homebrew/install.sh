@@ -22,6 +22,14 @@ brew install node --without-npm
 echo prefix=~/.npm-packages >> ~/.npmrc
 curl -L https://www.npmjs.org/install.sh | sh
 
+# Install Zsh from Brew, set as default shell
+brew install zsh
+cat /etc/shells | grep '/usr/local/bin/zsh'
+if [ $? -eq 1 ]
+  then
+    echo '/usr/local/bin/zsh' >> /etc/shells
+fi
+
 # Install cask
 brew install caskroom/cask/brew-cask
 
