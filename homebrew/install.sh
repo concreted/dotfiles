@@ -36,7 +36,8 @@ brew install caskroom/cask/brew-cask
 # Install cask packages
 brew cask install alfred
 brew cask install atom
-brew cask install google-chrome 
+brew cask install iterm2
+brew cask install google-chrome
 brew cask install emacs
 brew cask install flux
 
